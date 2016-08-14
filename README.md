@@ -22,7 +22,7 @@ Data source: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%
 
 ### Final Dataset
 You can read the final dataset using the following line in R:
-`\tidyData <- read.table("tidyData.txt")`
+`tidyData <- read.table("tidyData.txt")`
 
 ### Reference (Data source)
 
