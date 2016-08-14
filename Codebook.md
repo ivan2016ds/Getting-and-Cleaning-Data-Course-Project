@@ -40,12 +40,12 @@ Metrics used for these signals are:
 
 1. Observations: 181
 2. Variables: 81
-* Average of measurements: 79
-	* Type: Numeric value
-	* Average of mean/ standard deviation values for each signals (measurements) 
-* Subject: 1
-	* Type: Factor
-	* Subject/ respondent
-* Activity: 1
-	* Type: Factor
-	* Activity being carried out
+	* Average of measurements: 79
+		* Type: Numeric value
+		* Average of mean/ standard deviation values for each signals (measurements) 
+	* Subject: 1
+		* Type: Factor
+		* Subject/ respondent
+	* Activity: 1
+		* Type: Factor
+		* Activity being carried out
