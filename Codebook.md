@@ -11,41 +11,41 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 ### Metrics
 
 Metrics used for these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+* mean(): Mean value
+* std(): Standard deviation
 
 ### Dataset Information
 
-Observations: 181
-Variables: 81
-...Average of measurements: 79
-......Type: Numeric value
-......Average of mean/ standard deviation values for each signals (measurements) 
-...Subject: 1
-......Type: Factor
-......Subject/ respondent
-...Activity: 1
-......Type: Factor
-......Activity being carried out
+1. Observations: 181
+2. Variables: 81
+* Average of measurements: 79
+	* Type: Numeric value
+	* Average of mean/ standard deviation values for each signals (measurements) 
+* Subject: 1
+	* Type: Factor
+	* Subject/ respondent
+* Activity: 1
+	* Type: Factor
+	* Activity being carried out

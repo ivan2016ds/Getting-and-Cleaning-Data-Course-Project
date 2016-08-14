@@ -29,14 +29,14 @@ names(yTest) <- "activity"              # set variable names
 mergedTest <- cbind(xTest,subjectTest,yTest) 
 names(mergedTest)
 
-## final data set
-finalData <- rbind(mergedTrain,mergedTest)
+## first data set
+firstData <- rbind(mergedTrain,mergedTest)
 
 ## extract only mean and std for each measurement variables
-meanElem <- names(finalData)[grep("mean()",names(finalData))]
-stdElem <- names(finalData)[grep("std()",names(finalData))]
+meanElem <- names(firstData)[grep("mean()",names(firstData))]
+stdElem <- names(firstData)[grep("std()",names(firstData))]
 meanstdSub <- c(meanElem,stdElem,"subject","activity")
-finalData <- finalData[,meanstdSub]
+firstData <- firstData[,meanstdSub]
 
 ## function to replace activity name
 updateActivityNames <- function(x){
@@ -44,13 +44,13 @@ updateActivityNames <- function(x){
 }
 
 ## naming activity descriptively
-length(which(is.na(finalData$activity)))        # check if activity contain NA
-finalData$activity <- sapply(finalData$activity,updateActivityNames)
-length(which(is.na(finalData$activity)))        # check again if activity contain NA
+length(which(is.na(firstData$activity)))        # check if activity contain NA
+firstData$activity <- sapply(firstData$activity,updateActivityNames)
+length(which(is.na(firstData$activity)))        # check again if activity contain NA
 
 ## data set with average of variables
 library(dplyr)
-groupedData <- group_by(finalData,activity,subject)
+groupedData <- group_by(firstData,activity,subject)
 summaryData <- summarize_each(groupedData,funs(mean))
 
 ## writing to txt
